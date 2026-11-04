@@ -1,10 +1,10 @@
 import pandas as pd
 
-from .return_calc import simple_returns
-from .event_sampling import cusum_events
-from .price_barriers import label_events
-from .rolling_volatility import rolling_volatility
-from .momentum import momentum
+from afml.features.momentum import momentum
+from afml.features.returns import simple_returns
+from afml.features.volatility import rolling_volatility
+from afml.labeling.volatility_barriers import label_events
+from afml.sampling.cusum import cusum_events
 
 if __name__ == "__main__":
     # 1. Calculate returns, volatility and entry positions.

@@ -15,7 +15,8 @@ def drawdown(equity: pd.Series, initial_value: float = 1.0) -> pd.Series:
 
     return drawdown
 
-initial_val = 100
-equity = pd.Series([90, 110, 99, 121])
+if __name__ == "__main__":
+    initial_val = 100
+    equity = pd.Series([90, 110, 99, 121])
 
-print(drawdown(equity,initial_val))
+    print(drawdown(equity,initial_val))

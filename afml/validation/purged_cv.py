@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from .bootstrapping import events_overlap
+from afml.sampling.sequential_bootstrap import events_overlap
 
 def purge_training_events(
     train_events: pd.DataFrame,

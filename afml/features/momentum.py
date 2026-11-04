@@ -1,7 +1,5 @@
 import pandas as pd
 
-from .rolling_volatility import rolling_volatility
-
 def momentum(prices: pd.Series, lookback: int) -> pd.Series:
 
     previous_prices= prices.shift(lookback)
